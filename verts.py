@@ -48,7 +48,7 @@ def setSameXYZ(array):  # xとyとZ最大値でxとyとZを正規化, addなど�
 def mmNormal(array):
     setMinMax(array)
     # setSameXYZ(array)
-    print(sameMax, sameMin)
+    # print(sameMax, sameMin)
     scale = 0.5
     dst = np.zeros(array.shape)
     for i in range(3):
@@ -69,7 +69,7 @@ def averageZero(array):
 
 def setVerts(mesh_fi):
     mesh = Ply(mesh_fi=mesh_fi)
-    print(mesh.verts_np[0:5])
+    # print(mesh.verts_np[0:5])
     mesh.setInfos()
     mesh.changeAlpha(alpha=255)
     verts_np = mesh.verts_np
